@@ -16,7 +16,7 @@ function App(){
       taskName: newTask,
       completed: false,
     }
-    setTodolist([...todoList, task])
+    setTodolist([...todoList, newTask])
   }
   
   const deleteTask =(id)=>{
@@ -42,7 +42,7 @@ function App(){
            <div className='App'>
                <div className='addTask'>
                 <p>TODO LIST</p>
-                <input placeholder=' Writ your to do list...'onChange={handleChange} />
+                <input placeholder=' Write your to do list...'onChange={handleChange} />
                 <button onClick={addTask}>Add Task</button>
                 
                 <p>LIST OF WORKS</p>
